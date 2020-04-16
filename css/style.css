@@ -1,0 +1,127 @@
+/* BEGIN RESET */
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* END RESET */
+
+body {
+  background: url(../img/background.png);
+}
+.container {
+  width: 1024px;
+  margin: auto;
+  padding: 20px;
+}
+
+/***** header ******/
+header {
+
+}
+/* head */
+header .head {
+  position: relative;
+  background: url(../img/background-header.jpg);
+  height: 250px;
+  width: 100%;
+  border: 10px solid white;
+}
+
+header .head .logo {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
+header .head .logo .tittle {
+  font-size: 60px;
+  border: 5px solid white;
+  text-align: center;
+  margin: auto;
+  width: 70%;
+}
+header .head .logo .sub-tittle {
+  font-size: 25px;
+  padding-top: 25px;
+}
+/* end head */
+
+/* menu */
+header .low {
+  background: grey;
+  padding: 20px;
+}
+header .low .menu {
+  text-align: center;
+  list-style-type: none;
+}
+header .low .menu li {
+  display: inline-block;
+  margin: 0 10px;
+}
+header .low .menu a {
+  text-decoration: none;
+  color: white;
+}
+/* end menu */
+
+/***** end header ******/
+
+/* main */
+main {
+  margin: 10px 0;
+  height: 100vh;
+}
+  /* vertical columns */
+  main .col {
+    float: left;
+  }
+  main::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  main .left {
+    background: pink;
+    height: 50%;
+    width: 20%;
+  }
+  main .center {
+    background: purple;
+    height: 100%;
+    width: 50%;
+    margin: 0 5%;
+  }
+  main .right {
+    height: 100%;
+    width: 20%;
+  }
+  /* end vertical columns */
+
+
+
+  /* horizontal columns */
+  main .right .col {
+    height: 45%;
+    width: 100%;
+    margin-bottom: 10%;
+  }
+  main .right .high {
+    background: red;
+  }
+  main .right .low {
+    background: blue;
+  }
+  /* end horizontal columns */
+/* end main */
+
+/* footer */
+footer {
+  height: 200px;
+  background: lightblue;
+}
+/* end footer */
