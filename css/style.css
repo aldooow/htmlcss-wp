@@ -16,9 +16,7 @@ body {
 }
 
 /***** header ******/
-header {
 
-}
 /* head */
 header .head {
   position: relative;
@@ -67,17 +65,19 @@ header .low .menu a {
   color: white;
 }
 /* end menu */
-
 /***** end header ******/
 
-/* main */
+/***** main ******/
 main {
   margin: 10px 0;
-  height: 100vh;
+
 }
   /* vertical columns */
+
+
   main .col {
     float: left;
+
   }
   main::after {
     content: "";
@@ -86,16 +86,27 @@ main {
   }
 
   main .left {
-    background: pink;
+    padding: 10px;
+    background: white;
     height: 50%;
     width: 20%;
   }
+  main .left p {
+    padding: 10px 0;
+  }
+
+  /* column center */
   main .center {
-    background: purple;
-    height: 100%;
+    background: white;
+    padding: 10px;
     width: 50%;
     margin: 0 5%;
   }
+
+  main .center p {
+    padding: 20px 0;
+  }
+  /* column center */
   main .right {
     height: 100%;
     width: 20%;
@@ -103,25 +114,20 @@ main {
   /* end vertical columns */
 
 
-
   /* horizontal columns */
   main .right .col {
-    height: 45%;
+    padding: 10px;
     width: 100%;
     margin-bottom: 10%;
-  }
-  main .right .high {
-    background: red;
-  }
-  main .right .low {
-    background: blue;
+    background: white;
   }
   /* end horizontal columns */
-/* end main */
 
-/* footer */
+/***** end main ******/
+
+/***** footer ******/
 footer {
   height: 200px;
   background: lightblue;
 }
-/* end footer */
+/***** end footer ******/
