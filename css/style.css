@@ -6,6 +6,7 @@
 }
 /* END RESET */
 
+/*** general rulez ***/
 body {
   background: url(../img/background.png);
 }
@@ -14,6 +15,7 @@ body {
   margin: auto;
   padding: 20px;
 }
+/*** end general rulez ***/
 
 /***** header ******/
 
@@ -25,7 +27,6 @@ header .head {
   width: 100%;
   border: 10px solid white;
 }
-
 header .head .logo {
   text-align: center;
   color: white;
@@ -70,64 +71,91 @@ header .low .menu a {
 /***** main ******/
 main {
   margin: 10px 0;
-
 }
-  /* vertical columns */
+/** vertical columns **/
+main .col {
+  float: left;
+}
+main::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* column left */
+main .left {
+  padding: 10px;
+  background: white;
+  height: 50%;
+  width: 20%;
+}
+main .left .tittle .logo {
+  vertical-align: middle;
+  height: 20px;
+  width: 20px;
+}
+main .left .tittle .text {
+  font-size: 1.17em;
+  font-weight: bold;
+}
+main .left p {
+  padding: 10px 0;
+}
+/* end column left */
+
+/* column center */
+main .center {
+  background: white;
+  padding: 10px;
+  width: 50%;
+  margin: 0 5%;
+}
+main .center p {
+  padding: 20px 0;
+}
+/* end column center */
+
+/* column right */
+main .right {
+  height: 100%;
+  width: 20%;
+}
+/** end vertical columns **/
 
 
-  main .col {
-    float: left;
-
-  }
-  main::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  main .left {
-    padding: 10px;
-    background: white;
-    height: 50%;
-    width: 20%;
-  }
-  main .left p {
-    padding: 10px 0;
-  }
-
-  /* column center */
-  main .center {
-    background: white;
-    padding: 10px;
-    width: 50%;
-    margin: 0 5%;
-  }
-
-  main .center p {
-    padding: 20px 0;
-  }
-  /* column center */
-  main .right {
-    height: 100%;
-    width: 20%;
-  }
-  /* end vertical columns */
-
-
-  /* horizontal columns */
-  main .right .col {
-    padding: 10px;
-    width: 100%;
-    margin-bottom: 10%;
-    background: white;
-  }
-  /* end horizontal columns */
+/* horizontal columns */
+main .right .col {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10%;
+  background: white;
+}
+/* end horizontal columns */
+/* end column right */
 
 /***** end main ******/
 
 /***** footer ******/
 footer {
-  height: 200px;
-  background: lightblue;
+  position: relative;
+  height: 150px;
+  background: white;
+  text-align: center;
+}
+footer .filter {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+footer .made {
+  color: grey;
+}
+footer .social .icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 120px;
+  margin-top: 50px;
 }
 /***** end footer ******/
