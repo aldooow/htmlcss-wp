@@ -9,6 +9,7 @@
 /*** general rulez ***/
 body {
   background: url(../img/background.png);
+  font-family: "ROBOTO", verdana;
 }
 .container {
   width: 1024px;
@@ -22,29 +23,30 @@ body {
 /* head */
 header .head {
   position: relative;
+  text-align: center;
   background: url(../img/background-header.jpg);
   height: 250px;
   width: 100%;
   border: 10px solid white;
 }
 header .head .logo {
-  text-align: center;
   color: white;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
   }
 header .head .logo .tittle {
   font-size: 60px;
   border: 5px solid white;
-  text-align: center;
-  margin: auto;
-  width: 70%;
+  display: inline-block;
+  padding: 0px 30px;
 }
 header .head .logo .sub-tittle {
-  font-size: 25px;
+  font-size: 15px;
   padding-top: 25px;
+  letter-spacing: 8px;
 }
 /* end head */
 
@@ -74,6 +76,7 @@ main {
 }
 /** vertical columns **/
 main .col {
+  border-radius: 5px;
   float: left;
 }
 main::after {
@@ -84,6 +87,7 @@ main::after {
 
 /* column left */
 main .left {
+  border-radius: 5px;
   padding: 10px;
   background: white;
   height: 50%;
@@ -109,6 +113,11 @@ main .center {
   padding: 10px;
   width: 50%;
   margin: 0 5%;
+}
+main .center img {
+  width: 100%;
+  height: auto;
+  padding: none;
 }
 main .center p {
   padding: 20px 0;
